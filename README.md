@@ -13,13 +13,10 @@ infix fun Activity.extChangeActionBarVisibility(isVisible: Boolean) {
                 it.show()
             }
         }
-    }
-}
+    }}
 
 
-
-
-//use this extension funciton where you want as below:
+-use this extension funciton where you want as below:
 
  requireActivity() extChangeActionBarVisibility false
  

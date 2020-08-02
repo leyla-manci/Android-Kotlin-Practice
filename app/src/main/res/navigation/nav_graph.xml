@@ -26,8 +26,8 @@
         android:label="fragment_onboarding"
         tools:layout="@layout/fragment_onboarding">
         <action
-            android:id="@+id/action_onboardingFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_onboardingFragment_to_categorySelectionFragment"
+            app:destination="@id/categorySelectionFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
@@ -42,6 +42,15 @@
             app:destination="@id/onboardingFragment" />
         <action
             android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categorySelectionFragment"
+        android:name="lyl.manci.sence.ui.CategorySelectionFragment"
+        android:label="fragment_category_selection"
+        tools:layout="@layout/fragment_category_selection">
+        <action
+            android:id="@+id/action_categorySelectionFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
 </navigation>

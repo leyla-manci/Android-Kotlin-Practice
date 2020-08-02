@@ -10,6 +10,8 @@ import kotlinx.android.synthetic.main.fragment_onboarding.*
 import lyl.manci.sence.Mock.MockList
 import lyl.manci.sence.R
 import lyl.manci.sence.adapter.OnboardingPagerAdapter
+import lyl.manci.sence.enums.NavigateType
+import lyl.manci.sence.navigation.anyFragmentToAnotherFragment
 
 
 class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
@@ -33,8 +35,12 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             arrangeButtonVisibility(vpOnBoardingPage.currentItem)
         }
         nextOrFinishButton.setOnClickListener {
-            vpOnBoardingPage.currentItem++
-            arrangeButtonVisibility(vpOnBoardingPage.currentItem)
+            if (vpOnBoardingPage.currentItem == (MockList.onBoardPageCount - 1)) {
+                this anyFragmentToAnotherFragment NavigateType.OnBoardingToCategorySelection
+            } else {
+                vpOnBoardingPage.currentItem++
+                arrangeButtonVisibility(vpOnBoardingPage.currentItem)
+            }
         }
 
     }

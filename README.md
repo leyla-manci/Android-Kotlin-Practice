@@ -1,6 +1,8 @@
 # Android-Kotlin-Practice
 Sence
 
+show&hide actionbar
+
 infix fun Activity.extChangeActionBarVisibility(isVisible: Boolean) {
 
     (this as AppCompatActivity).supportActionBar?.let {
@@ -16,7 +18,7 @@ infix fun Activity.extChangeActionBarVisibility(isVisible: Boolean) {
 
 
 
-//**********************************
+
 //use this extension funciton where you want as below:
 
  requireActivity() extChangeActionBarVisibility false

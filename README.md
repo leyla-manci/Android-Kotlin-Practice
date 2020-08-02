@@ -3,8 +3,9 @@ Sence
 
 show&hide actionbar
 
-infix fun Activity.extChangeActionBarVisibility(isVisible: Boolean) {
 
+
+    infix fun Activity.extChangeActionBarVisibility(isVisible: Boolean) {
     (this as AppCompatActivity).supportActionBar?.let {
         if (isVisible != it.isShowing) {
             if (!isVisible) {
@@ -14,9 +15,11 @@ infix fun Activity.extChangeActionBarVisibility(isVisible: Boolean) {
             }
         }
     }}
+    //use this extension funciton where you want as below:
+     requireActivity() extChangeActionBarVisibility false
 
 
--use this extension funciton where you want as below:
 
- requireActivity() extChangeActionBarVisibility false
+
+
  

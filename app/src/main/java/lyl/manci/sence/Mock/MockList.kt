@@ -36,24 +36,29 @@ object MockList {
     fun getCategoryList(): List<CategoryModel> {
         val model1 = CategoryModel(
             "TEKNOLOJİ",
-            R.color.design_default_color_primary
+            R.drawable.arabic,
+            false
         )
 
         val model2 = CategoryModel(
             "BİLİM",
-            R.color.design_default_color_primary_variant
+            R.drawable.arabic,
+            false
         )
         val model3 = CategoryModel(
             "EĞİTİM",
-            R.color.design_default_color_error
+            R.drawable.arabic,
+            false
         )
         val model4 = CategoryModel(
             "EKONOMİ - FİNANS",
-            R.color.colorXDarkkBack
+            R.drawable.arabic,
+            false
         )
         val model5 = CategoryModel(
             "KÜLTÜR - SANAT",
-            R.color.colorLightBack
+            R.drawable.arabic,
+            false
         )
         val list1 = ArrayList<CategoryModel>()
         list1.add(model1)

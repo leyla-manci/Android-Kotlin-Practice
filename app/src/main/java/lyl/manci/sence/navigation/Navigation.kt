@@ -28,8 +28,11 @@ infix fun Fragment.anyFragmentToAnotherFragment(fragmentId: NavigateType) {
             findNavController().navigate(R.id.action_splashFragment_to_onboardingFragment)
         }
         NavigateType.OnBoardingToCategorySelection -> {
-
             findNavController().navigate(R.id.action_onboardingFragment_to_categorySelectionFragment)
+        }
+        NavigateType.CategorySelectionToLogin -> {
+
+            findNavController().navigate(R.id.action_categorySelectionFragment_to_loginFragment)
         }
     }
 }

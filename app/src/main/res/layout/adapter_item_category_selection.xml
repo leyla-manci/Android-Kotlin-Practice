@@ -4,19 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/frameCategoryItem"
     android:maxHeight="200dp">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txtCategory"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
         android:layout_margin="8dp"
-        android:background="@color/colorDarkBack"
         android:gravity="center"
         android:padding="16dp"
         android:textColor="@color/cardview_light_background"
         android:textSize="32sp"
         tools:text="test" />
+
+    <View
+        android:id="@+id/viewTrans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent20"
+        android:visibility="gone" />
 
 
 </FrameLayout>

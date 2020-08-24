@@ -14,7 +14,10 @@ import lyl.manci.sence.model.CategoryModel
 ▬     02/08/2020 - 19:55        ▬
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
  */
-class CategoryListAdapter(private val categoryList: List<CategoryModel>) :
+class CategoryListAdapter(
+    private val categoryList: List<CategoryModel>,
+    private inline val onItemClickListener: (cat: CategoryModel, position: Int) -> Unit
+) :
     RecyclerView.Adapter<CategoryListViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryListViewHolder =
         CategoryListViewHolder(parent)
@@ -23,6 +26,6 @@ class CategoryListAdapter(private val categoryList: List<CategoryModel>) :
     override fun getItemCount(): Int = categoryList.size
 
     override fun onBindViewHolder(holder: CategoryListViewHolder, position: Int) {
-        holder.bind(categoryList[position])
+        holder.bind(categoryList[position], position, onItemClickListener)
     }
 }

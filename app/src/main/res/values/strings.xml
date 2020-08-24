@@ -6,4 +6,5 @@
     <string name="hello_login_fragment">Login</string>
     <string name="category_selection">KATEGORİ SEÇİMİ</string>
     <string name="category_selection_sub_text">En az  3 kategori seçiniz</string>
+    <string name="category_selection_continue">Continue</string>
 </resources>

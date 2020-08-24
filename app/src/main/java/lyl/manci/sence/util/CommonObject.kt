@@ -1,4 +1,4 @@
-package lyl.manci.sence.enums
+package lyl.manci.sence.util
 
 
 /**       Code with ❤  ´• ل •`   ❤
@@ -7,10 +7,10 @@ package lyl.manci.sence.enums
 ▬     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬    ▬
 ▬     leyla.manci@gmail.com                           ▬
 ▬     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬     ▬
-▬     02/08/2020 - 16:39        ▬
+▬     24/08/2020 - 04:52        ▬
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
  */
-enum class NavigateType {
+object CommonObject {
 
-    SplashToOnBoarding, SplashToLogin, SplashToDashBoard, OnBoardingToCategorySelection, CategorySelectionToLogin
+    const val sharedPrefKey = "IS_ONBOARDING_SHOW"
 }

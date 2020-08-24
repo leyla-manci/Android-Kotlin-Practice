@@ -22,15 +22,13 @@ class OnboardingPagerViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
     LayoutInflater.from(parent.context)
         .inflate(R.layout.pager_adapter_item_onboarding, parent, false)
 ) {
-    val titleText = itemView.titleOnboard
-    val subText = itemView.subText
-    val onBoardImage = itemView.onBoardImage
+
     fun bind(onBoardModel: OnboardingPagerModel) {
 
-        titleText.text = onBoardModel.titleText
-        subText.text = onBoardModel.subText
+        itemView.titleOnboard.text = onBoardModel.titleText
+        itemView.subText.text = onBoardModel.subText
 
-        onBoardImage.background =
+        itemView.onBoardImage.background =
             ContextCompat.getDrawable(itemView.context, onBoardModel.onBoardImage)
 
     }

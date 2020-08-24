@@ -1,5 +1,7 @@
 package lyl.manci.sence.model
 
+import androidx.annotation.DrawableRes
+
 
 /**       Code with ❤  ´• ل •`   ❤
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
@@ -12,5 +14,6 @@ package lyl.manci.sence.model
  */
 data class CategoryModel(
     val categoryName: String,
-    val categoryColor: Int
+    @DrawableRes val categoryImage: Int,
+    var isSelected: Boolean
 )

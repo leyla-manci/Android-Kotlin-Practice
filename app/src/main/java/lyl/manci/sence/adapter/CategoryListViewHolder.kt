@@ -1,6 +1,7 @@
 package lyl.manci.sence.adapter
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -23,10 +24,29 @@ class CategoryListViewHolder(container: ViewGroup) :
         LayoutInflater.from(container.context)
             .inflate(R.layout.adapter_item_category_selection, container, false)
     ) {
-    fun bind(model: CategoryModel) {
+    fun bind(
+        model: CategoryModel,
+        position: Int,
+        onItemClickListener: (cat: CategoryModel, position: Int) -> Unit
+    ) {
         itemView.txtCategory.text = model.categoryName
         itemView.txtCategory.background =
-            ContextCompat.getDrawable(itemView.context, model.categoryColor)
+            ContextCompat.getDrawable(itemView.context, model.categoryImage)
+        this.arrangeTransView(model.isSelected)
+        itemView.frameCategoryItem.setOnClickListener {
+            model.isSelected = !model.isSelected
+            onItemClickListener(model, position)
+            this.arrangeTransView(model.isSelected)
+        }
+    }
 
+    private fun arrangeTransView(
+        isSelected: Boolean
+    ) {
+        if (isSelected) {
+            itemView.viewTrans.visibility = View.VISIBLE
+        } else {
+            itemView.viewTrans.visibility = View.GONE
+        }
     }
 }

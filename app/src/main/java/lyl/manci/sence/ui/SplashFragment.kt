@@ -24,7 +24,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
                     //ilk kez giriyor ise
                     this@SplashFragment anyFragmentToAnotherFragment NavigateType.SplashToOnBoarding
                 } else {
-                    if (false) {
+                    if (true) {
                         //daha önce login olmuş veya loginsiz devam seçeneği seçilmiştir
                         this@SplashFragment anyFragmentToAnotherFragment NavigateType.SplashToDashBoard
 

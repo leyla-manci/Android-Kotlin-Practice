@@ -8,5 +8,7 @@
     <color name="colorXDarkkBack">#6B553A</color>
     <color name="colorLightBack">#746B553A</color>
     <color name="colorTransparent20">#320B0A0A</color>
+    <color name="colorTransparent100">#00000000</color>
+    <color name="colorTransparent5">#0D000000</color>
     <color name="colorWhite">#FFFFFF</color>
 </resources>

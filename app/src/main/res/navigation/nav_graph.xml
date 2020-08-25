@@ -43,6 +43,12 @@
         <action
             android:id="@+id/action_splashFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_lastReadFragment"
+            app:destination="@id/lastReadFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_myLibraryFragment"
+            app:destination="@id/myLibraryFragment" />
     </fragment>
     <fragment
         android:id="@+id/categorySelectionFragment"
@@ -53,4 +59,14 @@
             android:id="@+id/action_categorySelectionFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/lastReadFragment"
+        android:name="lyl.manci.sence.ui.LastReadFragment"
+        android:label="fragment_last_read"
+        tools:layout="@layout/fragment_last_read" />
+    <fragment
+        android:id="@+id/myLibraryFragment"
+        android:name="lyl.manci.sence.ui.MyLibraryFragment"
+        android:label="fragment_my_library"
+        tools:layout="@layout/fragment_my_library" />
 </navigation>

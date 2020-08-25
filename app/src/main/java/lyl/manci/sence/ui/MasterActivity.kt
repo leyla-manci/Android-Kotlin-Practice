@@ -2,8 +2,11 @@ package lyl.manci.sence.ui
 
 
 import android.os.Bundle
-import android.os.CountDownTimer
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.ui.NavigationUI
+import kotlinx.android.synthetic.main.activity_master.*
 import lyl.manci.sence.R
 
 
@@ -11,17 +14,15 @@ class MasterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_master)
+        NavigationUI.setupWithNavController(
+            bottomNavBar,
+            findNavController(this, R.id.navHostFragment)
+        )
+        checkBottomNavBarState(View.GONE)
 
-        object : CountDownTimer(3000, 1000) {
-            override fun onFinish() {
-                //     supportFragmentManager.beginTransaction().replace(R.id.frameLayoutMain,OnboardingFragment()).commit()
-            }
+    }
 
-            override fun onTick(millisUntilFinished: Long) {
-
-            }
-
-
-        }.start()
+    fun checkBottomNavBarState(visibility: Int) {
+        bottomNavBar.visibility = visibility
     }
 }

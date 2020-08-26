@@ -7,4 +7,6 @@
     <string name="category_selection">KATEGORİ SEÇİMİ</string>
     <string name="category_selection_sub_text">En az  3 kategori seçiniz</string>
     <string name="category_selection_continue">Continue</string>
+    <string name="forget_password"><u>Forget Password ?</u></string>
+    <string name="dont_have_anaccount">Don\'t have an account ? <u>Click here</u></string>
 </resources>

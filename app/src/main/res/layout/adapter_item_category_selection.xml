@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/frameCategoryItem"
+    android:padding="8dp"
     android:maxHeight="200dp">
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -14,7 +15,7 @@
         android:layout_margin="8dp"
         android:gravity="center"
         android:padding="16dp"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/colorLightBack"
         android:textSize="32sp"
         tools:text="test" />
 

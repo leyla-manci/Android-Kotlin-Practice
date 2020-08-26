@@ -20,7 +20,7 @@ object MockList {
     fun getOnBoardPageList(): List<OnboardingPagerModel> {
         val model = OnboardingPagerModel(
             "Connect with people around the World",
-            R.drawable.arabic,
+            R.drawable.onboard_flovers,
             "Lorem impsum blablabla Lorem impsumem impsum blablabla Lorem impsum blablabla Lorem impsum blablabla Lorem impsum blablabla "
         )
 
@@ -36,28 +36,28 @@ object MockList {
     fun getCategoryList(): List<CategoryModel> {
         val model1 = CategoryModel(
             "TEKNOLOJİ",
-            R.drawable.arabic,
+            R.drawable.category_selection_background,
             false
         )
 
         val model2 = CategoryModel(
             "BİLİM",
-            R.drawable.arabic,
+            R.drawable.category_selection_background,
             false
         )
         val model3 = CategoryModel(
             "EĞİTİM",
-            R.drawable.arabic,
+            R.drawable.category_selection_background,
             false
         )
         val model4 = CategoryModel(
             "EKONOMİ - FİNANS",
-            R.drawable.arabic,
+            R.drawable.category_selection_background,
             false
         )
         val model5 = CategoryModel(
             "KÜLTÜR - SANAT",
-            R.drawable.arabic,
+            R.drawable.category_selection_background,
             false
         )
         val list1 = ArrayList<CategoryModel>()

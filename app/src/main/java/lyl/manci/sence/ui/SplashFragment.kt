@@ -16,6 +16,16 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         requireActivity() extChangeActionBarVisibility false
+        /*
+        val sharedPref = requireActivity().getPreferences(Context.MODE_PRIVATE)
+        with(sharedPref.edit())
+        {
+            remove(sharedPrefKey)
+            commit()
+        }
+        */
+
+
         object : CountDownTimer(3000, 1000) {
             override fun onFinish() {
                 val sharedPref = requireActivity().getPreferences(Context.MODE_PRIVATE)

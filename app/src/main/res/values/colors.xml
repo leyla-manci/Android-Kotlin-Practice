@@ -11,4 +11,8 @@
     <color name="colorTransparent100">#00000000</color>
     <color name="colorTransparent5">#0D000000</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrayTrans30">#4D302F2F</color>
+    <color name="colorGoogle">#D34E41</color>
+    <color name="colorTwitter">#19B3FE</color>
+    <color name="colorFacebook">#425B94</color>
 </resources>

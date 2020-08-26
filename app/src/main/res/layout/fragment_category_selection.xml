@@ -26,12 +26,14 @@
         android:id="@+id/rvCategorySelection"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:background="@color/colorGrayTrans30"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/adapter_item_category_selection" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/categorySelectionContinue"
         android:layout_width="200dp"
+        android:layout_marginTop="4dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/category_selection_continue_selector"
